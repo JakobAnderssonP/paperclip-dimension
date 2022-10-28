@@ -58,6 +58,6 @@ module Paperclip
   end
 
   module Schema
-    COLUMNS[:dimensions] = :string
+    COLUMNS.merge({ :dimensions => :string })
   end
 end
